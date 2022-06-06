@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
     <title>Contact</title>
 </head>
@@ -39,88 +40,60 @@
             <h2><span class="contactH2">Contact Details</span></h2>
         </section> 
 
-        <section id="splitScreenForm">
+        <section class="formSection">
 
-            <div class="leftScreenForm">
+            
+            <form class="container">
+            
 
+                <div class="row g-3">   
 
-                <h4>
-                    <strong><span class="h3Form2">Let's Talk!</span></strong>
-                </h4>
-
-                <h4>
-                    <img src="../images/emailIcon.png" width="60" height="60" alt="Email me">
-
-                        <a href="mailto:hernandezms893@gmail.com?subject=Hey Michelle, let's talk about a project!"><strong>Email me</strong></a>
-                </h4>
-
-                <h4>
-
-                    <img src="../images/linkedInIcon.png" width="60" height="60" alt="LinkedIn">
-
-                        <a href="https://www.linkedin.com/in/michelle-hern%C3%A1ndez-b44451125/" target="_blank"><strong>Find me on LinkedIn</strong></a>
-                </h4>
-
-                <h4>
-                    <img src="../images/callIcon.png" width="60" height="20" alt="Call me">
-
-                        <a href="tel:5491164092567"><strong>Call me</strong></a>
-                </h4>
+            <div class="col-md-3">
+                <label fo="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+         
+            
+            <div class="col-md-3">
+                <label for="inputLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName">
+            </div>
 
             </div>
 
-            <div class="rightScreenForm">
 
-                <h3>
-                    <span class="h3Form"><strong>Would you prefer to be contacted by me?</strong></span>
-                </h3>
-
-                <h4>
-                    <span class="h4Form"></span>Leave your details and I will contact you shortly</span>
-                </h4>
-
-                    <form>
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for= "name">Name</label>
-                                    <input type="text" name="name" required>
-                                </td>
-
-                                <td>
-                                    <label for= "last">Last Name</label>
-                                    <input type="text" name="last" required>
-                                </td>
-                
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <label for= "phone">Phone number</label>
-                                    <input type="text" name="phone" required>
-                                </td>
-
-                                <td>
-                                    <label for= "email">Email</label>
-                                    <input type="text" name="email" required>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <label for= "subject">Subject</label>
-                                    <input type="text" name="subject">
-                                </td>
-                            </tr>
-
-                        </table>
-        
-                        <button>
-                            <a href="thankYou.html" target="_blank">Submit</a>     
-                        </button>
-                    </form>
+            <div class="row g-3">
+            
+              
+            <div class="col-md-3">
+                <label for="inputEmail4"class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
             </div>
+           
+            
+            <div class="col-md-3">
+                <label for="inputNumber" class="form-label">Phone number</label>
+                <input type="text" class="form-control" id="inputNumber">
+            </div>
+
+            </div>
+
+
+            <div class="col-md-6">
+                <label for="inputSubject" class="form-label form-control-lg">Subject</label>
+                <textarea class="form-control" id="inputSubject" rows="6"></textarea>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit
+                    <a href="thankYou.html" target="_blank">Submit</a>
+                </button>
+            </div>
+          </form>
+         
+
         </section>
+
 
     <footer>
         <h4>
