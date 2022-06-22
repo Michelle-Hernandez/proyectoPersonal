@@ -45,7 +45,7 @@ p{
     "footer";
     
     grid-template-columns: 100%;
-    grid-template-rows: 7% 10% 2fr 2fr 7%;
+    grid-template-rows: auto;
     gap: 10px;
     
     }
@@ -55,8 +55,8 @@ p{
       grid-template-areas: 
         "navBlog"
         "mainHome"
-        "about  "
-        "work-experience"
+        "sobre  "
+        "#experiencia-laboral"
          "footer ";
         
         grid-template-columns: 100% ;
@@ -72,7 +72,7 @@ p{
         align-items: center;
         justify-content: center;
         background-color:$background-section;
-        height: 40vh;
+        height: 350px;
     
     }
             
@@ -120,12 +120,12 @@ p{
     
     }
 
-    #work-experience{
+    #experiencia-laboral{
 
         background-color:$background-section ;
         justify-content: center;
         text-align: center;
-        height: 25vh;
+        height: 40%;
         
     }
         .h2Work{
@@ -164,7 +164,7 @@ p{
     }
 
     section#blogPost2 {
-        grid-area: blogPost; 
+        grid-area: blogPost2; 
         display: flex;
         flex-direction: column;
         background-color: $background-main;
@@ -173,8 +173,7 @@ p{
         text-align: center;
         flex-wrap: nowrap;  
         font-size: 2rem;
-        padding-bottom: 10%;
-        padding-top: 5%;
+
     }
 
     footer {
@@ -188,6 +187,25 @@ p{
     justify-content: center;
     font-weight: bold;
     }
+
+    .carouselCaption{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align:center;
+    justify-content:center;
+    font-weight: bold;
+    margin-bottom: 5%;
+    
+ }
+
+ .carouselCaption h4 {
+    font-weight: bolder;
+    color: rgb(133, 19, 133);
+ }
+
+ .carousel-item img{
+    border-radius: 15px;
+ }
 
     }
 
@@ -204,7 +222,7 @@ p{
         
     
       grid-template-columns:50% 50% ;
-      grid-template-rows: 7% 7% 2fr 2fr 7%;
+      grid-template-rows: auto auto auto auto auto;
       gap: 10px;
    }
 
@@ -213,19 +231,19 @@ p{
       grid-template-areas: 
         "navBlog navBlog"
         "mainHome mainHome "
-        "about about "
-        "work-experience work-experience"
+        "sobre sobre "
+        "#experiencia-laboral #experiencia-laboral"
          "footer  footer  ";
         
         grid-template-columns:50% 50% ;
-        grid-template-rows: 15% 2fr 1fr 3fr 20%;
+        grid-template-rows: 15% 40% 1fr 3fr 20%;
         gap: 10px;
     }
         
     main#mainHome{
         grid-area: mainHome;
         display: flex; 
-        height: 50vh;
+        height: 400px;
 
     }
 
@@ -237,12 +255,12 @@ p{
     
     }
 
-    #work-experience{
+    #experiencia-laboral{
 
         background-color: $background-section ;
         justify-content: center;
         text-align: center;
-        height: 60vh;
+        height: 75%;
         
     }
         .h2Work{
@@ -280,7 +298,7 @@ p{
     }
 
     section#blogPost2 {
-        grid-area: blogPost; 
+        grid-area: blogPost2; 
         display: flex;
         flex-direction: column;
         background-color: $background-main;
@@ -288,8 +306,6 @@ p{
         align-items: center;
         text-align: center; 
         font-size: 2rem;
-        padding-bottom: 10%;
-        padding-top: 5%;
     }
 
     footer {
@@ -303,6 +319,25 @@ p{
     justify-content: center;
     font-weight: bold;
     }
+
+    .carouselCaption{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align:center;
+    justify-content:center;
+    font-weight: bold;
+    margin-bottom: 2%;
+    
+ }
+
+ .carouselCaption h4 {
+    font-weight: bolder;
+    color: rgb(133, 19, 133);
+ }
+
+ .carousel-item img{
+    border-radius: 15px;
+ }
 }
 
 /*desktop*/
@@ -318,7 +353,7 @@ p{
     "footer  footer    footer";
   
     grid-template-columns: auto auto auto;
-    grid-template-rows: 7% 3fr 2fr 2fr 10%;
+    grid-template-rows: auto auto auto auto auto;
     gap: 5px;
   
    }
@@ -329,14 +364,23 @@ p{
       grid-template-areas: 
         "navBlog navBlog navBlog"
         "mainHome mainHome mainHome"
-        "about about about"
-        "work-experience work-experience work-experience"
+        "sobre sobre sobre"
+        "#experiencia-laboral #experiencia-laboral #experiencia-laboral"
         "footer  footer footer ";
         
         grid-template-columns:auto auto auto;
         grid-template-rows: 7% 2fr 1fr 2fr 10%;
         gap: 10px;
     }
+
+   .h3Blog {
+   font-size: 15px;
+   width: 80%;
+   justify-content: center;
+   text-align: center;
+   padding-left: 20%;
+   flex-wrap: wrap;
+ }
   
     main#mainBlog{
         grid-area: mainBlog;
@@ -357,10 +401,11 @@ p{
         flex-direction: row;
         background-color: $background-main;
         text-align: center;    
-    
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        margin-top: 2%;
+       
 }
 
     section#blogPost2 {
@@ -372,12 +417,13 @@ p{
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        margin-top: 20px;
     }
 
 .leftScreenHome{
     
     padding-right: auto;
-    height: 60vh;
+    height: 400px;
     background-color:$background-section;
     background-size: cover;
     background-position: center;
@@ -394,7 +440,7 @@ background-image: url(../images/sincerely-media.jpg);
 background-size: cover;
 background-position: center;
 width: 50%;
-height: 60vh;
+height: 400px;
 }
 
 #splitScreenHome{
@@ -411,9 +457,13 @@ height: 60vh;
         background-color: $background-main;
         align-items: center;
         text-align: center;
+        justify-content: center;
         font-size: 1.5rem;
         height: 20vh;
-        padding-top: 5%;
+        padding-top: 10px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        
     
     }
     .h2About{
@@ -421,13 +471,14 @@ height: 60vh;
         justify-content: center;
         align-items: center;
         text-align: center;
+        
     }
 
-       #work-experience{
+       #experiencia-laboral{
         background-color:$background-section ;
         justify-content: center;
         text-align: center;
-        height: 80vh;
+        height: 70%;
         
          }
 
@@ -452,7 +503,7 @@ height: 60vh;
     font-weight: bold;
     padding-top: 5%;
     padding-bottom: 5%;
-    }
+    
 }
 
 
@@ -469,7 +520,7 @@ height: 60vh;
     }
 
     .contactH2{
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-weight: bolder;
         justify-content: center;
         align-items: center;
@@ -490,3 +541,26 @@ height: 60vh;
         margin-top: 20px;
         color: black;
     }
+
+    /* carousel */
+
+
+ .carouselCaption{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align:center;
+    justify-content:center;
+    font-weight: bold;
+    
+ }
+
+ .carouselCaption h4 {
+    font-weight: bolder;
+    color: rgb(133, 19, 133);
+ }
+
+ .carousel-item img{
+    border-radius: 15px;
+ } 
+
+}
