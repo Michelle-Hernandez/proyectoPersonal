@@ -213,6 +213,84 @@ p {
   .carousel-item img {
     border-radius: 15px;
   }
+
+  #mainContact {
+    display: flex;
+    background-image: url(../images/rodion-kutsaev-8P-uQaTd8rw-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: #FBF5F5;
+    font-weight: bold;
+  }
+
+  .contactH2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 5%;
+    color: black;
+  }
+
+  .ContactForm {
+    margin-top: 30px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .labelForm {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  form {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 4%;
+  }
+
+  form input, textarea {
+    border: 0;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 5%;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  form button {
+    padding: 10px;
+    width: 40%;
+    margin: 5% auto 5% 30%;
+    justify-content: center;
+    background: white;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .thankYouImg {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   #gridBlog {
@@ -324,14 +402,104 @@ p {
   .carousel-item img {
     border-radius: 15px;
   }
+
+  #mainContact {
+    display: flex;
+    background-image: url(../images/rodion-kutsaev-8P-uQaTd8rw-unsplash.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: #FBF5F5;
+    font-weight: bold;
+  }
+
+  .contactH2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 5%;
+    color: black;
+  }
+
+  .ContactForm {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+  }
+
+  .labelForm {
+    color: white;
+    font-weight: bold;
+  }
+
+  form {
+    padding: 10px;
+    width: 60%;
+    margin: 5% 25% 5% 25%;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  form input {
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  textarea {
+    max-height: 200px;
+    min-height: 50px;
+  }
+
+  form select {
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+  }
+
+  form button {
+    padding: 6px;
+    background: white;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+  }
+
+  .thankYouImg {
+    width: 100%;
+  }
 }
 /*desktop*/
 @media (min-width: 1024px) {
   #grid {
     display: grid;
     grid-template-areas: "navBlog navBlog navBlog" "mainBlog mainBlog mainBlog" "blogPost blogPost blogPost" "blogPost2 blogPost2 blogPost2" "footer  footer    footer";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto;
     gap: 5px;
   }
 
@@ -375,7 +543,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    margin-top: 2%;
+    margin-top: 20px;
   }
 
   section#blogPost2 {
@@ -491,18 +659,6 @@ p {
     color: black;
   }
 
-  .formSection {
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 5%;
-  }
-
-  #formButton {
-    margin-top: 20px;
-    color: black;
-  }
-
   /* carousel */
   .carouselCaption {
     padding-top: 2%;
@@ -520,4 +676,62 @@ p {
   .carousel-item img {
     border-radius: 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+
+  .ContactForm {
+    margin-top: 30px;
+    width: 50%;
+    height: 40%;
+  }
+
+  .labelForm {
+    color: white;
+    font-weight: bold;
+  }
+
+  form {
+    background: black;
+    display: flex;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-inline: auto;
+  }
+
+  form input, textarea {
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  form select {
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+  }
+
+  form button {
+    padding: 6px;
+    background: white;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    margin: 15px auto 0;
+    border-radius: 12px;
+  }
+
+  .thankYouImg {
+    width: 100%;
+  }
+}

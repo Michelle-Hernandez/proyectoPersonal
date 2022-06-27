@@ -45,58 +45,32 @@
             </section> 
         </main>
 
-        <section class="formSection" id="formSection">
+ <div class="ContactForm">
 
-            
-            <form class="container">
-            
+                    <form>
+                       
+                        <label class="labelForm" for= "name">Name</label>
+                        <input type="text" name="name" required placeholder="First name">
+                            
+                        <label class="labelForm" for= "last">Last Name</label>
+                        <input type="text" name="last" required placeholder="Last name">
+                       
+                        <label class="labelForm" for= "phone">Phone number</label>
+                        <input type="text" name="phone" required placeholder="Phone">
+                            
+                        <label class="labelForm" for= "email">Email</label>
+                        <input type="text" name="email" required placeholder="Email">
 
-                <div class="row g-3">   
-
-                    <div class="col-md-3">
-                        <label fo="inputName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="inputName">
-                    </div>
-                
-            
-                    <div class="col-md-3">
-                        <label for="inputLastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="inputLastName">
-                    </div>
-                </div>
-
-
-                <div class="row g-3">
-            
-              
-                    <div class="col-md-3">
-                        <label for="inputEmail4"class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
+                        <label class="labelForm" for= "subject">Subject</label>
+                        <textarea name="subject" placeholder="Write yor message"></textarea>
         
-                    <div class="col-md-3">
-                        <label for="inputNumber" class="form-label">Phone number</label>
-                        <input type="text" class="form-control" id="inputNumber">
-                    </div>
+                        <button>
+                            <a href="thankYou.html" target="_blank">Submit</a>     
+                        </button>
+                    </form>
+            </div>
+        </section>
 
-                </div>
-
-
-                <div class="col-md-6">
-                    <label for="inputSubject" class="form-label form-control-lg">Subject</label>
-                    <textarea class="form-control" id="inputSubject" rows="6"></textarea>
-                </div>
-
-                <div class="col-12">
-                    <button type="submit" class="btn btn-dark" id="formButton">
-
-                        <a href="thankYou.html" target="_blank">Submit</a>
-
-                    </button>
-                </div>
-          </form>
-
-          </section>
 
         <footer>
 
